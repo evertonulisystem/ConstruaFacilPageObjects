@@ -12,7 +12,7 @@ public class CalcTest {
         //Prepara - Given
         int num1 =5;
         int num2=7;
-        int resultadoEsperado=129;
+        int resultadoEsperado=12;
 
         //Executar - When
         int resultadoAtual = Calc.somarDoisNumeros(num1,num2);
