@@ -19,4 +19,5 @@ dependencies {
 
 test {
     useTestNG() //para saber qual framework estamos utilizando
+
 }

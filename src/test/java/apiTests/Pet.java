@@ -94,10 +94,23 @@ public class Pet {
         //System.out.println("Response Body is:  " + response.asString()); //saida em uma linha.: com prertty sai como o json formatado
         System.out.println("Response Body is:  " + response.prettyPrint());
     }
-    @Test
+    //@Test(priority = 5, dependsOnMethods = {"atualizarPet"})
+    @Test(priority =3 , dependsOnMethods = {"consultarPet"})
     public void excluir() throws IOException {
         System.out.println("Aqui foi a exclusao");
 
+        given()
+                .contentType("application/json")
+                .log().all()
+        .when()
+                .delete(uri +"/" + petId)
+        .then()
+                .log().all()
+                .statusCode(200)
+                .body("code" ,is(200))
+                .body("type",is("unknown"))
+                .body("message",is(Integer.toString(petId))) //convertendo pois na swagger esta string
+                ;
 
     }
 
