@@ -3,11 +3,7 @@ package steps;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
-
-
 public class comprarCursoPO {
-
-
     @Dado("^que acesso o site papito$")
     public void queAcessoOSitePapito() {
         System.out.println("Passo1");
