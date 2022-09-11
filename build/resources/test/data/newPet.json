@@ -1,0 +1,18 @@
+{
+  "id": 123459,
+  "category": {
+    "id": 1,
+    "name": "dog"
+  },
+  "name": "spoike",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "sold"
+}
