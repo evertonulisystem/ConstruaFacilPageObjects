@@ -12,12 +12,16 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
 public class Pet {
+//Definido as variaveis para melhor gerencia
+    String uri = "https://petstore.swagger.io/v2/pet";
+    int petId = 123459; //alterar de string para int pois ira referenciar aqui para tudo abaixo
+
 
     public String lerJson(String caminhoJson) throws IOException {
         return new String(Files.readAllBytes(Paths.get(caminhoJson)));
     }
 
-    @Test
+    @Test(priority =0)
     public void incluirPet() throws IOException {
         RestAssured.baseURI = "https://petstore.swagger.io/v2/pet";
         String jsonBody = lerJson("src/test/resources/data/pet.json");
@@ -26,11 +30,12 @@ public class Pet {
                 .log().all()
                 .body(jsonBody)
         .when()
-                .post("https://petstore.swagger.io/v2/pet")
+                //.post("https://petstore.swagger.io/v2/pet")
+                .post(uri)
         .then()
                 .log().all() //registrar tudo da volta
                 .statusCode(200)
-                .body("id", is(123459))
+                .body("id", is(petId))
                 .body("name", is("spike"))
                 .body("category.name", is("dog"));
         System.out.println("Adicionado com Sucesso"); // + response.getStatusLine());
@@ -47,20 +52,38 @@ public class Pet {
 
     }
 
-    @Test
+    @Test(priority =1, dependsOnMethods = {"incluirPet"})
     public void consultarPet() {
-        String PetId ="123459";
+        //String PetId ="123459"; comentado pois declarei variavel global
         given()
                 .contentType("application/json")
                 .log().all()
                 .when()
-                      .get("https://petstore.swagger.io/v2/pet/" + PetId)
+                      .get(uri + "/" + petId)
                 .then()
                 .log().all()
                 .statusCode(200)
                 .body("name", is("spike"))
                 .body("status",is("available"))
                 ;
+    }
+
+    @Test(priority =2, dependsOnMethods = {"consultarPet"}) //definindo as prioridades de execução com dependencia de metodos
+    public void atualizarPet() throws IOException {
+        String jsonBody = lerJson("src/test/resources/data/newPet.json");
+
+        given()
+                .contentType("application/json")
+                .log().all()
+                .body(jsonBody)
+        .when()
+                .put("https://petstore.swagger.io/v2/pet")
+        .then()
+                .log().all()
+                .statusCode(200)
+                .body("status",is("sold"))
+                .body("name", is("spoike"))
+        ;
     }
 
     @Test
@@ -70,9 +93,12 @@ public class Pet {
         Response response = httpRequest.get("1");
         //System.out.println("Response Body is:  " + response.asString()); //saida em uma linha.: com prertty sai como o json formatado
         System.out.println("Response Body is:  " + response.prettyPrint());
+    }
+    @Test
+    public void excluir() throws IOException {
+        System.out.println("Aqui foi a exclusao");
 
 
     }
-
 
 }
