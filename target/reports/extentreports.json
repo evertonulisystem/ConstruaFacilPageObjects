@@ -1,0 +1,93 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-09-12T01:30:15.586Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Pesquisar curso",
+        "description": "",
+        "id": "comprar-curso-papito;pesquisar-curso;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDowns()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2996000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "que acesso o site papito",
+            "match": {
+              "location": "steps.comprarCursoPO.queAcessoOSitePapito()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "pesquiso por \"cypress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cypress",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.comprarCursoPO.pesquisoPor(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "confirmo o nome do curso \"cypress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cypress",
+                  "offset": 26
+                }
+              ],
+              "location": "steps.comprarCursoPO.confirmoONomeDoCurso(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Comprar curso papito",
+    "description": "",
+    "id": "comprar-curso-papito",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featuresPO/compraCursoPO.feature",
+    "tags": []
+  }
+]

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8c907ae-28e3-49f5-b7eb-cc1cd454a01a" name="Changes" comment="Retornar ao build gradle e @Test no ruuner">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Carrinho.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Resultado.java" afterDir="false" />
+    <list default="true" id="e8c907ae-28e3-49f5-b7eb-cc1cd454a01a" name="Changes" comment="iniciando Page FActory com design pattern Page Objects">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
@@ -17,26 +14,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/apiTests/Pet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/unitTests/CalcTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/steps/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/steps/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/steps/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/steps/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/steps/comprarCursoPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/steps/comprarCursoPO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/featuresPO/compraCursoPO.feature" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/featuresPO/compraCursoPO.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Home.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/comprarCursoPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/comprarCursoPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/featuresPO/compraCursoPO.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/featuresPO/compraCursoPO.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/reports/extentreports" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/reports/extentreports.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +100,24 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Runner (1)">
+    <configuration name="Feature: compraCursoPO" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/featuresPO/compraCursoPO.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ConstruaFacil.test" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: compraCursoPO" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Pesquisar curso" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/featuresPO/compraCursoPO.feature" />
@@ -178,29 +183,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="seleniumSimples.consultarCurso" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;webTests.seleniumSimples.consultarCurso&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,19 +212,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Feature: compraCursoPO" />
       <item itemvalue="Cucumber Java.Scenario: Pesquisar curso" />
       <item itemvalue="Gradle.Runner (1)" />
       <item itemvalue="Gradle.ConstruaFacil [test]" />
-      <item itemvalue="Gradle.seleniumSimples.consultarCurso" />
       <item itemvalue="TestNG.Runner" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Runner (1)" />
+        <item itemvalue="Cucumber Java.Feature: compraCursoPO" />
         <item itemvalue="Gradle.ConstruaFacil [test]" />
         <item itemvalue="TestNG.Runner" />
         <item itemvalue="Cucumber Java.Scenario: Pesquisar curso" />
-        <item itemvalue="Gradle.seleniumSimples.consultarCurso" />
       </list>
     </recent_temporary>
   </component>
@@ -374,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662938067317</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="iniciando Page FActory com design pattern Page Objects">
+      <created>1662948435352</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1662948435352</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,7 +394,8 @@
     <MESSAGE value="Evidencias em casos de testes" />
     <MESSAGE value="Alterar build para IDE - saida json e html" />
     <MESSAGE value="Retornar ao build gradle e @Test no ruuner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Retornar ao build gradle e @Test no ruuner" />
+    <MESSAGE value="iniciando Page FActory com design pattern Page Objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="iniciando Page FActory com design pattern Page Objects" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
