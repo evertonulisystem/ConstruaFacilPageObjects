@@ -4,16 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8c907ae-28e3-49f5-b7eb-cc1cd454a01a" name="Changes" comment="Alterar build para IDE - saida json e html">
+    <list default="true" id="e8c907ae-28e3-49f5-b7eb-cc1cd454a01a" name="Changes" comment="Retornar ao build gradle e @Test no ruuner">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Carrinho.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Resultado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/steps/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/steps/Hooks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/steps/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/steps/Runner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/steps/comprarCursoPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/steps/comprarCursoPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/resources/featuresPO/compraCursoPO.feature" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/featuresPO/compraCursoPO.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/comprarCursoPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/comprarCursoPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/reports/extentreports" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/extentreports" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/reports/extentreports.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/extentreports.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/featuresPO/compraCursoPO.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/featuresPO/compraCursoPO.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/extentreports" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/extentreports.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +112,7 @@
       <recent name="F:\devQA\construaFacil\ConstruaFacil\src\test\resources\data" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Runner">
+  <component name="RunManager" selected="Gradle.Runner (1)">
     <configuration name="Scenario: Pesquisar curso" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/featuresPO/compraCursoPO.feature" />
@@ -215,9 +238,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Runner" />
         <item itemvalue="Gradle.Runner (1)" />
         <item itemvalue="Gradle.ConstruaFacil [test]" />
+        <item itemvalue="TestNG.Runner" />
         <item itemvalue="Cucumber Java.Scenario: Pesquisar curso" />
         <item itemvalue="Gradle.seleniumSimples.consultarCurso" />
       </list>
@@ -344,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662937815356</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Retornar ao build gradle e @Test no ruuner">
+      <created>1662938067317</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1662938067317</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,8 +404,13 @@
     <MESSAGE value="Instalando pacote utils com commons-io" />
     <MESSAGE value="Evidencias em casos de testes" />
     <MESSAGE value="Alterar build para IDE - saida json e html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alterar build para IDE - saida json e html" />
+    <MESSAGE value="Retornar ao build gradle e @Test no ruuner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Retornar ao build gradle e @Test no ruuner" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

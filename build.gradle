@@ -7,19 +7,32 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+
 }
 
 dependencies {
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.4.0'
-    testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+
+    testImplementation group: 'org.testng', name: 'testng', version: '6.10'
     testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '4.4.0'
     implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.0'
     testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.0'
-    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.3.4'
+
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.3.3'
     implementation group: 'io.cucumber', name: 'cucumber-testng', version: '7.3.4'
-    implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
+    implementation group: 'io.cucumber', name: 'cucumber-core', version: '7.2.3'
+    // implementation group: 'com.vimalselvam', name: 'cucumber-extentsreport', version: '3.0.2' //gera dashboad
+    //implementation group: 'com.vimalselvam', name: 'cucumber-extentsreport', version: '2.0.5'
+
     implementation group: 'org.freemarker', name: 'freemarker', version: '2.3.31'
+    implementation group: 'org.springframework', name: 'spring-context', version: '5.3.8'
+
+    implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9' //gera o json para jenkins e o html
+    implementation group: 'com.aventstack', name: 'extentreports-testng-adapter', version: '1.0.5'
+    //formatat como json: CTRL+ALT+L
+
+
 }
 
 test {

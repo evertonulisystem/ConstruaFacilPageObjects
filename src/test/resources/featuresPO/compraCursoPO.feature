@@ -1,8 +1,9 @@
-#language: pt
-Funcionalidade: Comprar curso papito
+Feature: Comprar curso papito
 
-  Cenario: Pesquisar curso
-
-    Dado que acesso o site papito
-    Quando pesquiso por "cypress"
-    Entao confirmo o nome do curso "cypress"
+  Scenario Outline: Pesquisar curso
+    When que acesso o site papito
+    Given pesquiso por "<arg0>"
+    Then confirmo o nome do curso "<arg0>"
+    Examples:
+      | arg0    |
+      | cypress |
